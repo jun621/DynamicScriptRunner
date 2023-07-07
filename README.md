@@ -2,11 +2,12 @@
 A full-stack project with a sleek UI, enabling file uploads to S3, storing inputs and paths in DynamoDB, triggering VM scripts, and automatic VM termination for seamless workflow automation.
 
 ## System Components 
- Frontend Component :
+
+### Frontend Component :
  
 a : Responsive UI utilizes TailwindCSS , React.js with a textinput and file input
 
-Backend Component : 
+### Backend Component : 
 
    a : Upload the inputFile to S3 from the browser directly
 
