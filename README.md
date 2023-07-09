@@ -1,32 +1,70 @@
-# DynamicScriptRunner
-A full-stack project with a sleek UI, enabling file uploads to S3, storing inputs and paths in DynamoDB, triggering VM scripts, and automatic VM termination for seamless workflow automation.
+# Getting Started with Create React App
 
-## System Components 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Frontend Component :
- 
-a : Responsive UI utilizes TailwindCSS , React.js with a textinput and file input
+## Available Scripts
 
-### Backend Component : 
+In the project directory, you can run:
 
-   a : Upload the inputFile to S3 from the browser directly
+### `npm start`
 
-   b : Save the inputs and filePath to DynamoDB FileTable via api gateway (AWS Cognito) and lambda function
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-   c : Upon file upload to S3 and DynamoDb trigger a scriptrun in EC2 via DynamoDB event
-   
-      c.1 : Download the script from S3 to VM (upload the script to S3 via CDK) 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-      c.2 : Get the inputs from DynamoDB fileTable via auto-generated id 
+### `npm test`
 
-      c.3 : Download the inputFile from S3 to VM 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-      c.4 : Append retireved inputText to inputFile and save 
+### `npm run build`
 
-      c.5 : Upload the outputFile to S3 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-      c.6 : Save the outputs and S3 filePath to DynamoDB 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   d   : Upon successful execution terminate VM automatically 
-   
-   
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
