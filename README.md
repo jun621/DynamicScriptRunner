@@ -18,14 +18,14 @@ A full-stack project with a sleek UI, enabling file uploads to S3, storing input
 
 6. Run the script in Vm
 
-  6.1 Get the input from DynamoDB via autogenrated nanoid 
+   6.1 Get the input from DynamoDB via autogenrated nanoid 
 
-  6.2 Download the inputfile from S3 to VM 
+   6.2 Download the inputfile from S3 to VM 
 
-  6.3 Append the retrieved input text to the downloaded input file and save 
+   6.3 Append the retrieved input text to the downloaded input file and save 
 
-  6.4 Upload the output file to S3 
+   6.4 Upload the output file to S3 
 
-  6.5 Save the outputs and S3 path in DynamoDB 
+   6.5 Save the outputs and S3 path in DynamoDB 
 
 7. Terminate the VM automatically 
