@@ -16,7 +16,7 @@ A full-stack project with a sleek UI, enabling file uploads to S3, storing input
 
 5. Download the script from S3 to VM (upload the scripts to S3 via AWS CDK)
 
-6. Run the script in Vm
+6. Run the script in VM
 
    6.1 Get the input from DynamoDB via autogenrated nanoid 
 
